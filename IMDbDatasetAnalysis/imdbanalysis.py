@@ -166,7 +166,7 @@ def interactive_console():
 
 # 6. Main function to run the pipeline
 def main():
-    df = load_data(r"imdb_large_multilang_100.csv")  # Change path if needed
+    df = load_data(r"imdb_large_multilang_100.csv") 
     cleaned_df = clean_data(df)
     upload_to_mysql(cleaned_df)
     analyze_data()
